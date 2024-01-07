@@ -1,17 +1,16 @@
 {
-  "name": "turbo-shad-storybook-starter",
+  "name": "repo",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "dev:web": "turbo run dev --filter ui --filter web",
-    "dev:docs": "turbo run dev --filter ui --filter docs",
-    "dev:both": "turbo run dev --filter ui --filter doca --filter web",
-    "dev:ui": "turbo run dev --filter ui --filter storybook",
+    "dev:web": "turbo run dev -F @repo/ui -F @repo/web",
+    "dev:docs": "turbo run dev -F @repo/ui -F @repo/docs",
+    "dev:ui": "turbo run dev -F @repo/ui -F @repo/storybook",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui:add": "pnpm --filter ui ui:add"
+    "ui:add": "pnpm -F @repo/ui ui:add"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
@@ -20,5 +19,5 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0"
+  "packageManager": "pnpm@8.10.5"
 }

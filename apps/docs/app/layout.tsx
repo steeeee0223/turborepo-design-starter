@@ -1,6 +1,6 @@
-import "ui/styles/globals.css";
-import { ThemeProvider } from "ui/components/ThemeProvider";
-import { TailwindIndicator, cn } from "ui";
+import "@repo/ui/styles/globals.css";
+import { ThemeProvider } from "@repo/ui/components/ThemeProvider";
+import { TailwindIndicator, cn } from "@repo/ui";
 
 interface RootLayoutProps {
   children: React.ReactNode;

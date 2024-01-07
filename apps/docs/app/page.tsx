@@ -1,4 +1,4 @@
-import { Button } from "ui";
+import { Button } from "@repo/ui";
 
 export default function Page() {
   return (
