@@ -1,6 +1,7 @@
-import "@repo/ui/styles/globals.css";
-import { ThemeProvider } from "@repo/ui/components/ThemeProvider";
-import { TailwindIndicator, cn } from "@repo/ui";
+import '@repo/ui/styles.css';
+
+import * as React from 'react';
+import { cn, TailwindIndicator, ThemeProvider } from '@repo/ui';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -10,7 +11,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn("min-h-screen bg-background font-sans antialiased")}>
+      <body className={cn('min-h-screen bg-background font-sans antialiased')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative flex min-h-screen flex-col">
             <div className="flex-1">{children}</div>

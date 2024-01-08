@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix"
   },
   "dependencies": {
     "next": "^13.4.1",
@@ -22,6 +22,7 @@
     "autoprefixer": "^10.4.14",
     "eslint-config-custom": "workspace:*",
     "postcss": "^8.4.24",
+    "prettier-config-custom": "workspace:*",
     "tailwindcss": "^3.3.2",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"

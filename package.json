@@ -10,13 +10,16 @@
     "dev:ui": "turbo run dev -F @repo/ui -F @repo/storybook",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui:add": "pnpm -F @repo/ui ui:add"
+    "ui:add": "pnpm -F @repo/ui ui:add",
+    "clean:d": "turbo daemon clean"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
+    "prettier-config-custom": "workspace:*",
+    "stylelint": "^15.10.2",
+    "stylelint-config-custom": "workspace:*",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.10.5"
