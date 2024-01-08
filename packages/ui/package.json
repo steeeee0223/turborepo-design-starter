@@ -4,6 +4,13 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
+  "exports": {
+    "./components": "./components/index.ts",
+    "./lib": "./lib/index.ts",
+    "./postcss.config": "./postcss.config.js",
+    "./tailwind.config": "./tailwind.config.js",
+    "./styles.css": "./styles/globals.css"
+  },
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
     "ui:add": "pnpm dlx shadcn-ui@latest add"

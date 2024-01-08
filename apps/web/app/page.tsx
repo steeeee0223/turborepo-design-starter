@@ -1,12 +1,12 @@
-import { Button } from "@repo/ui";
+import { Button } from "@repo/ui/components";
 
 export default function Page() {
-  return (
-    <div className="container flex flex-col gap-5">
-      <h1 className="text-red-700">App</h1>
-      <div>
-        <Button>Hello</Button>
-      </div>
-    </div>
-  );
+    return (
+        <div className="container flex flex-col gap-5">
+            <h1 className="text-red-700">App</h1>
+            <div>
+                <Button>Hello</Button>
+            </div>
+        </div>
+    );
 }
