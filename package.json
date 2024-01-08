@@ -8,9 +8,10 @@
     "dev:web": "turbo run dev -F @repo/ui -F @repo/web",
     "dev:docs": "turbo run dev -F @repo/ui -F @repo/docs",
     "dev:ui": "turbo run dev -F @repo/ui -F @repo/storybook",
+    "gen:shadcn": "pnpm -F @repo/ui ui:add",
+    "gen:ui": "turbo gen component",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui:add": "pnpm -F @repo/ui ui:add",
     "clean:d": "turbo daemon clean"
   },
   "devDependencies": {
