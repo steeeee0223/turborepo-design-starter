@@ -14,6 +14,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@repo/config": "workspace:*",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
@@ -30,11 +31,9 @@
     "@typescript-eslint/parser": "^6.18.0",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.56.0",
-    "eslint-config-custom": "workspace:*",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
-    "prettier-config-custom": "workspace:*",
     "storybook": "^7.6.7",
     "tsconfig": "workspace:*",
     "typescript": "^5.3.3",
